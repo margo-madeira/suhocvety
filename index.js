@@ -3,7 +3,7 @@ const arrImgScroll = Array.from(document.querySelectorAll('.img-scroll'));
 const leftBtn = document.querySelector('.left');
 const rightBtn = document.querySelector('.right');
 
-leftBtn.textContent = '<';
+leftBtn.textContent = '<';//стрелка
 //визуализируем  первые фото в галерее
 
     

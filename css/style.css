@@ -65,6 +65,7 @@
     z-index: 1;
     background-size: cover;
     width: 100%;
+   
   }
 
   .header::after {
@@ -76,6 +77,38 @@
     bottom: 0;
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .welcome {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .circle {
+    display: block;
+    overflow: visible;
+    width: 55px;
+    font-size: 20px;
+    fill: white;
+    letter-spacing: 4px;
+    animation: 8s linear infinite rotate;
+    position: absolute;
+    top: 25px;
+    left: 4%;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .circle path {
+      fill: none;
   }
 
   .menu-list-item {
@@ -90,7 +123,7 @@
     position: absolute;
     padding: 0;
     right: 4%;
-    top: 32px;
+    top: 40px;
     background-color: transparent;
   }
   
@@ -157,13 +190,13 @@
   .icon-mail {
     right: 50px;
     bottom: 50px;
-    width: 35px;
-    height: 30px;
+    width: 48px;
+    height: 38px;
     position: fixed;
     display: block;
     background-image: url("../images/email.png");
   }
-
+  
   .brend {
     width: 100%;
     flex-direction: column;
@@ -178,6 +211,7 @@
     background-color: rgba(249, 227, 180, 0.5);
     margin-bottom: 20px;
     display: block;
+    box-shadow: 10px 5px 5px rgba(219, 210, 195, 0.5);
   }
 
   .discription {
@@ -186,6 +220,7 @@
     text-align: justify;
     padding: 15px;
     background-color: rgba(255, 236, 195, 0.3);
+    box-shadow: 10px 5px 5px rgba(219, 210, 195, 0.5);
   }
 
   .main-text {
@@ -392,6 +427,10 @@
       background-size: cover;
       background-position: center right;
     }
+
+  .welcome {
+    justify-content: flex-end;
+  }  
 
   .button {
     display: none;
